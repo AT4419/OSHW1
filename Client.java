@@ -55,7 +55,7 @@ public class Client {
                                 out.println(end);
                                 //
                                 Thread x = new DownloadHandler(clientSocket, start, end, filename, i);
-                                x.start();
+                                x.start(); // run
                                 Thread.sleep(100);
                             }
                         } else {
